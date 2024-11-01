@@ -1,6 +1,7 @@
 package cmd
 
 import (
+	"github.com/nais/cli/cmd/debugcmd"
 	"log"
 	"os"
 
@@ -30,6 +31,7 @@ func commands() []*cli.Command {
 		kubeconfigcmd.Command(),
 		postgrescmd.Command(),
 		validatecmd.Command(),
+		debugcmd.Command(),
 	)
 }
 
